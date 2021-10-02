@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T.Comp hotspot > logout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<link rel="stylesheet" type="text/css" href="direct.css">
+</script>
+
+<table width="100%" height="100%">
+
+<tr>
+<td align="center" valign="middle">
+<table class="tabula back">
+<tr><td class="user-ac">$(username)</td></tr>
+<tr><td>IP address</td><td>: $(ip)</td></tr>
+<tr><td>MAC address</td><td>: $(mac)</td></tr>
+<tr><td>Waktu Sesi</td><td>: $(uptime)</td></tr>
+$(if session-time-left)
+<tr><td>Waktu Tersisa</td><td>: $(session-time-left)</td></tr>
+$(endif)
+<tr><td>Status Koneksi</td><td>: <b style="color: #33ccff;">Disconnected</b></td></tr>
+<tr><td>Bytes up/down</td><td>: $(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+</table>
+<br>
+<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+<input type="submit" value="Login">
+</form>
+</td>
+</table>
+</body>
+</html>

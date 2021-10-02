@@ -1,0 +1,291 @@
+/*
+ Last Fixed 11 May 2020
+
+ Official Website
+ t-comp.org
+
+ T.Comp Hotspot Login Version
+ v2.5
+ 
+ Powered by C.I.O Team
+*/
+*{
+	margin: 0;
+}
+.main{
+	height: 100%;
+}
+.title{
+	text-align: center;
+	color: #fff;
+	font-family: arial, sans-serif;
+	font-weight: lighter;
+	font-size: 60px;
+}
+b{
+	color: lime;
+}
+/*
+=========================
+Login Form
+=========================
+*/
+.form{
+	height: 800px auto;
+	width: 370px;
+	padding: 20px 10px;
+	background: rgba(0,0,0,0.2);
+	padding-top: 15%;
+	box-sizing: border-box;
+	position: absolute;
+	margin-left: 5%;
+	background-size: cover;
+	background-repeat: repeat;
+	position: fixed;
+}
+.form label{
+	margin: 0px;
+}
+.form input[type=username], input[type=password]{
+	display: grid;
+	width: 100%;
+	padding: 10px;
+	margin-top: 40px;
+	box-sizing: border-box;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	border-left: 0px;
+	color: #0099ff;
+	font-weight: bold;
+	font-size: 15px;
+	outline: none;
+	border-radius: 7px;
+}
+.form input[type=username]:focus, input[type=password]:focus{
+	border-left: solid lime 5px;
+	transition: .5s;
+}
+.form input[type=submit]{
+	display: grid;
+	width: 100%;
+	padding: 10px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	background-color: #0099ff;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border:none;
+	outline: none;
+	border-radius: 10px;
+}
+.form input[type=submit]:focus{
+	background-color: #004d80;
+	transition: .4s;
+}
+.side{
+	padding: 4% 10px 0px 0px;
+	margin: auto;
+	font-size: 20px;
+	position: relative;
+	width: 60%;
+	float: right;
+}
+.clr-black{
+	color: #000;
+}
+.sub{
+	text-align: center;
+	font-variant: small-caps;
+	font-family: arial;
+	color: #fff;
+	font-weight: lighter;
+}
+.tc-font-rsp{
+	font-size: 4vw;
+}
+.txt-shadow{
+	text-shadow: 10px 3px 10px rgba(0,0,0,.30);
+}
+.smooth{
+	transition: 1s
+}
+.copy{
+	font-size: 12px;
+	color: #fff;
+}
+.middle{
+	text-align: center;
+	font-weight: lighter;
+	font-family: calibri, sans-serif;
+}
+.p-top{
+	padding-top: 10px;
+}
+.slogan{
+	font-size: 15px;
+	color: #fff;
+}
+.warning{
+	background-color: #49a09d;
+	color: #fff;
+	padding: 4px;
+	font-weight: bold;
+}
+/*
+===================
+Tools T.Comp
+===================
+*/
+.tc-justify{
+	text-align: justify;
+}
+.tc-middle-bold{
+	text-align: center;
+}
+.tc-table-price{
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,.30));
+}
+.tc-table-price > table {
+  border-collapse: collapse;
+  margin: 18px auto;
+  background-color: #fff;
+  width: 75%;
+}
+.tc-table-price table, td, th{
+  border: 0px solid grey;
+  text-align: center;
+  color: rgba(0,0,0,1);
+  font-family: arial, sans-serif;
+}
+.tc-table-price tr > td{
+	font-size: 16px;
+	overflow: auto;
+}
+.tc-table-price th{
+	background-color: #4CAF50;
+	color: #fff;
+}
+.tc-font-blck{
+	color: #000;
+}
+.tc-content-side{
+	margin: 20px auto;
+	width: 80%;
+	font-size: 20px;
+	padding: 20px;
+
+}
+.tc-list-card{
+	display: inline-flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	font-family: arial, sans-serif;
+	font-weight: lighter;
+}
+.tc-card{
+	padding: 10px;
+	margin: auto;
+	width: 270px;
+	color: #fff;
+}
+.tc-card img{
+	padding: 20px;
+	margin: 10px auto;
+	display: block;
+	width: 90px;
+	filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+}
+.tc-card > h3{
+	padding: 5px;
+	font-size: 28px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.tc-card > h3:hover{
+	color: #40ff00;
+	transition: .9s;
+}
+.tc-card > p{
+	padding: 5px;
+	height: 210px;
+	font-size: 24px;
+}
+.tc-text-walk{
+	text-align: center;
+	margin: auto;
+	color: #fff;
+	display: block;
+	font-family: calibri, arial, sans-serif;
+}
+.contact img{
+	float: right;
+	position: -webkit-fixed;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	width: 70px;
+	filter: drop-shadow(10px 10px 4px rgba(0,0,0,.30));
+}
+@font-face{
+	font-family: nasalization;
+	src: url(../fonts/Nasalization/nasalization-rg.ttf);
+}
+@media screen and (min-width: 1024px){
+	.form{
+		min-height: 100%;
+		transition: 1s;
+		margin-left: 0%
+		padding-top: 10%;
+	}
+	.tc-table-price table{
+		height: 100%;
+	}
+	html, body{
+	height: 100%;
+	background-image: linear-gradient(to right, #2980B9, #6DD5FA, #91EAE4);
+}
+}
+@media screen and (max-width: 1024px){
+	.side{
+		display: none;
+		transition: 1s;
+	}
+	.main{
+		clear: both;
+	}
+	.form{
+		width: 350px;
+		transition: 1s;
+		background-color: transparent;
+		position: relative;
+		height: auto;
+		padding: 0;
+		margin: 0;
+	}
+	.sec{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	html, body{
+	height: 100vh;
+	background-color: #2980B9;
+}
+}
+@media screen and (max-width: 600px) {
+	.form{
+		width: 100%;
+		transition: 1s;
+		padding-top: 0%;
+		margin: 0 20px;
+		background-color: transparent;
+	}
+	
+}
+@media screen and (max-height: 300px){
+	.sec{
+		height: 100%;
+	}
+}

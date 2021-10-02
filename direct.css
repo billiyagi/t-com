@@ -1,0 +1,111 @@
+/*style*/
+*{font-weight: lighter; font-family: calibri;}
+body{
+	position: relative;
+	background-color: #2980B9;
+	color: white;
+	text-align: left;
+}
+a{
+	text-decoration: none;
+}
+.main p{
+	font-size: 30px;
+}
+.main tr td{
+	padding: 10px;
+	padding-top: ;
+}
+.container{
+	font-family: "Raleway thin", sans-serif;
+}
+.login table{
+	border-radius: 10px;
+	height: 400px;
+}
+.login tr td{
+	display: grid;
+	padding: 20px;
+	width: 300px;
+}
+.login{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #0033cc;
+	outline: none;
+	color: white;
+	font-size: 20px;
+	border-color: #3333ff;
+	text-align: left;
+}
+.footer p{
+text-align: right;
+position: absolute;
+}
+
+input:hover{
+	border-color: #3333ff;
+}
+.tabula{
+	padding: 10px;
+}
+.back{
+	background: rgba(0,0,0,0.2);
+}
+.tabula{
+	font-size: 2vw;
+}
+.tabula p{
+	font-size: 2.3vw;
+}
+.left{
+	text-align: left;
+}
+.user-ac{
+	color: #00cc00
+}
+input[type=submit]{
+	display: grid;
+	width: 200px;
+	padding: 10px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	background-color: #0099ff;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-color: #33adff;
+	outline: #fff;
+	border-radius: 5px;
+}
+/*responsive*/
+@media screen and (max-width: 1000px){
+	.side{
+		display: none;
+		float: right;
+	}
+	.tabula{
+		font-size: 20px;
+	}
+	.tabula p{
+		font-size: 23px;
+	}
+}
+@media screen and (min-width: 1000px){
+	.form fieldset{
+		float: left;
+	}
+	.container{
+		margin: 9%;
+	}
+}
+@media screen and (min-width: 862px){
+	.form legend img{
+		display: none;
+	}
+}
+@media screen and(min-width: 1000px){
+	.container{
+		padding-top: 50px;
+	}
+}

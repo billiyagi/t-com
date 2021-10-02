@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="assets/img/login-form/malw-logo.png">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>T.COMP</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+<div class="sec">
+	<form name="login" action="$(link-login-only)" class="form smooth" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+		<h1 class="title" style="font-family: nasalization"><b>T.</b>COMP</h1>
+		$(if error)<br /><div style="color: #fff; font-size: 17px; width: auto;box-sizing: border-box;background-color: #49a09d;padding: 10px 15px;font-weight: bold;font-style: italic;border-left: 4px solid #00FF00">$(error)</div>$(endif)
+		<input type="username" name="username" placeholder="Username" value="$(username)"maxlength="40" autofocus required autocomplete="off">
+		<input type="password" name="password" placeholder="Password">
+		<input type="submit" name="submit" value="Masuk">
+		<br>
+		<p class="slogan middle p-top">kamu member? login <a href="member/">disini</a></p>
+		<p class="slogan middle p-top">Powered By C.I.O TEAM</p>
+		<p class="copy middle p-top">&copy;2020 T.COMP</p>
+	</form>
+</div>
+<div class="side smooth">
+	<h1 class="sub txt-shadow tc-font-rsp">SELAMAT DATANG <br>DI HOTSPOT LOGIN WIFI</h1>
+	<p class="sub txt-shadow tc-font-rsp"><b>T.</b>COMP</p>
+	<br>
+	<marquee width="67%" align="center" valign="center" scrollamount="4" class="tc-text-walk txt-shadow">Pilih Paket Internet Sesuai Kebutuhan Anda.</marquee>
+	
+<div class="tc-table-price">
+	<table cellpadding="7">
+	<tr>
+		<th rowspan="10" style="background-color: #fff;color: #2980B9; font-size: 2.6vw;" >TARIF HARGA WIFI UNLIMITED T.COMP</th>
+	</tr>
+	<tr>
+		<th colspan="10px">Harian</th>
+	</tr>
+	<tr>
+		<td>128kb/s</td>
+		<td>256kb/s</td>
+		<td>512kb/s</td>
+		<td>1mb/s</td>
+		<td>2mb/s</td>
+		<td>5mb/s</td>
+	</tr>
+	<tr>
+		<td>Rp 2.000</td>
+		<td>Rp 3.000</td>
+		<td>Rp 5.000</td>
+		<td>Rp 10.000</td>
+		<td>Rp 20.000</td>
+		<td>Rp 35.000</td>
+	</tr>
+		<tr>
+		<th colspan="10px">Mingguan</th>
+	</tr>
+	<tr>
+		<td>128kb/s</td>
+		<td>256kb/s</td>
+		<td>512kb/s</td>
+		<td>1mb/s</td>
+		<td>2mb/s</td>
+		<td>5mb/s</td>
+	</tr>
+	<tr>
+		<td>Rp 5.000</td>
+		<td>Rp 7.000</td>
+		<td>Rp 10.000</td>
+		<td>Rp 15.000</td>
+		<td>Rp 25.000</td>
+		<td>Rp 50.000</td>
+	</tr>
+		<tr>
+		<th colspan="10px">Bulanan</th>
+	</tr>
+	<tr>
+		<td>128kb/s</td>
+		<td>256kb/s</td>
+		<td>512kb/s</td>
+		<td>1mb/s</td>
+		<td>2mb/s</td>
+		<td>5mb/s</td>
+	</tr>
+	<tr>
+		<td>Rp 7.000</td>
+		<td>Rp 10.000</td>
+		<td>Rp 15.000</td>
+		<td>Rp 20.000</td>
+		<td>Rp 30.000</td>
+		<td>Rp 70.000</td>
+	</tr>
+</table>
+</div>
+<div class="contact side">
+	<a href="#"><img src="assets/img/contact/whatsapp.png"></a>
+</div>
+<div class="tc-content-side">
+	<div class="tc-list-card">
+	<div class="tc-card">
+		<img src="assets/img/card-image/rocket.png" alt="rocket">
+		<h3>FASTER</h3>
+		<p>Rasakan Kenyaman dan Kecepatan Berselancar Internet Tanpa Buffer ataupun Lemot dengan Jaringan yang Stabil, Sesuai dengan kecepatan internet yang dipilih.</p>
+	</div>
+		<div class="tc-card">
+		<img src="assets/img/card-image/security.png" alt="security">
+		<h3>SECURE</h3>
+		<p>Aman Digunakan Tersedia Juga Layanan VPN dan Proxy, Keamanan Jaringan internet ialah salah satu Prioritas Kami.</p>
+	</div>
+		<div class="tc-card">
+		<img src="assets/img/card-image/statistik.png" alt="statistik">
+		<h3>UNLIMITED</h3>
+		<p>Kuota Tanpa Batas Tidak akan Pernah Habis, Hanya waktu yang Membatasi!.</p>
+	</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>
